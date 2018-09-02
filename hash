@@ -1,0 +1,27 @@
+//Maria do Carmo Albuquerque Antunes Correia
+#include <stdio.h>
+
+int main()
+{
+    long long int t, a, b, x, n, c, d, m, j, i, h;
+    int e=0;
+    scanf("%llu",&t);
+    
+
+    while(e!=t){
+        i=0;
+        j=0;
+        scanf("%llu%*c%llu%*c%llu%*c%llu%*c%llu%*c%llu%*c%llu", &a, &b, &x, &n, &c, &d, &m);
+        while(i<=n){
+         h = (a*(x+i) + b)%m;
+         if(h<=d && h>=c){
+             j++;
+         }
+         i++;
+        }
+        printf("%llu\n",j);
+        e++;
+    }
+
+return 0;
+}
